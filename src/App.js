@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 import firebase from "firebase";
+import 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
 
 const config = {
   apiKey: "AIzaSyCz3laxK1vMpEpjJFXSx8UyzlH7mE4KBT0",
