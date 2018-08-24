@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyCz3laxK1vMpEpjJFXSx8UyzlH7mE4KBT0",
+  authDomain: "kuru-anime-network.firebaseapp.com",
+  databaseURL: "https://kuru-anime-network.firebaseio.com",
+  projectId: "kuru-anime-network",
+  storageBucket: "kuru-anime-network.appspot.com",
+  messagingSenderId: "195377790597"
+};
+
+firebase.initializeApp(config);
+
 class App extends Component {
   render() {
     return (
