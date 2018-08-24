@@ -23,3 +23,6 @@ yarn-error.log*
 
 # firebase storage rules
 database.rules.json
+
+# firebase cache
+/.firebase
