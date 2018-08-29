@@ -5,16 +5,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import firebase from "firebase";
-const config = {
-    apiKey: "AIzaSyCz3laxK1vMpEpjJFXSx8UyzlH7mE4KBT0",
-    authDomain: "kuru-anime-network.firebaseapp.com",
-    databaseURL: "https://kuru-anime-network.firebaseio.com",
-    projectId: "kuru-anime-network",
-    storageBucket: "kuru-anime-network.appspot.com",
-    messagingSenderId: "195377790597"
-};
+import { firebaseConfig } from "./firebase-config";
 
-firebase.initializeApp(config);
+firebase.initializeApp( firebaseConfig );
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

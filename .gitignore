@@ -26,3 +26,6 @@ database.rules.json
 
 # firebase cache
 /.firebase
+
+# firebase credentials
+src/firebase-config.js
