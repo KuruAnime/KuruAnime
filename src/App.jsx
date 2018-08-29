@@ -28,6 +28,7 @@ class App extends Component {
   render() {
     const { submitRegistration, emailOnChange, passwordOnChange } = this;
     const inputStyle = "border block w-full mb-2 p-3 rounded bg-grey-lighter";
+    const buttonStyle = "rounded block w-full p-3 bg-black text-white";
     return (
       <div>
         <Header />
@@ -36,7 +37,7 @@ class App extends Component {
           <form onSubmit={submitRegistration}>
             <input className={inputStyle} type="text" placeholder="E-mail" onChange={emailOnChange} />
             <input className={inputStyle} type="password" placeholder="Password" onChange={passwordOnChange} />
-            <button type="submit">Submit</button>
+            <button className={buttonStyle} type="submit">Submit</button>
           </form>
         </div>
       </div>
