@@ -6,7 +6,7 @@ class Header extends Component {
             <header className="bg-grey-darker text-white block py-4 border-b border-solid border-grey-darkest shadow">
                 <div className="container mx-auto">
                     Kuru Anime
-            </div>
+                </div>
             </header>
         );
     }
