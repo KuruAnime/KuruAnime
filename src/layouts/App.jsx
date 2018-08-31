@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Header from '../components/header';
-import Navigation from '../components/navigation';
-import Footer from '../components/footer';
+import Header from '../components/header.jsx';
+import Navigation from '../components/navigation.jsx';
+import Footer from '../components/footer.jsx';
 
-import UserAuthenticationPage from '../pages/userauthentication';
-import HomePage from '../pages/homepage';
+import UserAuthenticationPage from '../pages/userauthentication.jsx';
+import HomePage from '../pages/homepage.jsx';
 
 class App extends Component {
     PageContent = () => {
