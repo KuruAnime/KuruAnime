@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Header from '../components/header';
+import Navigation from '../components/navigation';
+import Footer from '../components/footer';
 
-import UserAuthentication from '../pages/UserAuthentication';
+import UserAuthenticationPage from '../pages/userauthentication';
+import HomePage from '../pages/homepage';
 
 class App extends Component {
     PageContent = () => {
         return (
-            <div>
-                <UserAuthentication />
-            </div>
+            <Router>
+                <div>
+                    <nav>
+                        <Link to="/">Homepage</Link>
+                        <Link to="/userauthentication">User Authentication</Link>
+                    </nav>
+                    <Route exact path="/" component={HomePage} />
+                    <Route exact path="/userauthentication" component={UserAuthenticationPage} />
+                </div>
+            </Router>
         );
     }
     render() {
@@ -17,6 +27,7 @@ class App extends Component {
         return (
             <div>
                 <Header />
+                <Navigation />
                 <PageContent />
                 <Footer />
             </div>
