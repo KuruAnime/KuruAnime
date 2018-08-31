@@ -48,7 +48,7 @@ class UserAuthentication extends Component {
             <input className={inputStyle} type="text" placeholder="E-mail" onChange={emailOnChange} />
             <input className={inputStyle} type="password" placeholder="Password" onChange={passwordOnChange} />
             <label className="mb-2 block text-right" ><input onChange={registerCheckbox} type="checkbox" name="register" id="registerCheckbox"/> Register</label>
-            <button className={buttonStyle} type="submit">Submit</button>
+            <button className={buttonStyle} type="submit">{pageStatus}</button>
           </form>
         </div>
       </div>
