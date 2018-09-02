@@ -4,7 +4,7 @@ import Header from '../components/header';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 
-import UserAuthenticationPage from '../pages/userauthentication';
+import AuthPage from '../pages/auth';
 import HomePage from '../pages/homepage';
 
 class App extends Component {
@@ -12,12 +12,9 @@ class App extends Component {
         return (
             <Router>
                 <div>
-                    <nav>
-                        <Link to="/">Homepage</Link>
-                        <Link to="/userauthentication">User Authentication</Link>
-                    </nav>
+                    <Navigation />
                     <Route exact path="/" component={HomePage} />
-                    <Route exact path="/userauthentication" component={UserAuthenticationPage} />
+                    <Route exact path="/userauthentication" component={AuthPage} />
                 </div>
             </Router>
         );
@@ -27,7 +24,6 @@ class App extends Component {
         return (
             <div>
                 <Header />
-                <Navigation />
                 <PageContent />
                 <Footer />
             </div>
