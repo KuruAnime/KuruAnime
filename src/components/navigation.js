@@ -8,7 +8,7 @@ class Navigation extends Component {
             <div>
                 <nav className="container mx-auto py-4">
                     <Link className={linkStyle} to="/">Homepage</Link>
-                    <Link className={linkStyle} to="/userauthentication">User Authentication</Link>
+                    <Link className={linkStyle} to="/auth">Login / Register</Link>
                 </nav>
             </div>
         );
