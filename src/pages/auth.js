@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+import firebase from "firebase/app";
+import 'firebase/auth';
+import { firebaseConfig } from "../firebase-config";
+
+firebase.initializeApp( firebaseConfig );
+
 class AuthPage extends Component {
     constructor(props) {
         super(props);
