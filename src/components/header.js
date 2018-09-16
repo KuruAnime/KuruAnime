@@ -3,41 +3,46 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         const style = {
-            header: (`
-                bg-kuru
-                block
-                border-b
-                border-kuru-darker
-                border-solid
-                py-2
-                text-white
-            `),
-            container: (`
-                container
-                flex
-                items-center
-                mx-auto
-            `),
-            logo: (`
-                logo-typography
-                no-underline
-                text-2xl
-                text-white
-            `),
-            menu: (`
-                flex
-                list-reset
-                ml-10
-            `),
-            menuItems: (`
-                hover:text-grey
-                no-underline
-                text-white
-            `),
-            search: (`
-                p-2
-                rounded
-            `),
+            header: [
+                "bg-kuru",
+                "block",
+                "border-b",
+                "border-kuru-darker",
+                "border-solid",
+                "py-2",
+                "text-white",
+            ].join(" "),
+            container: [
+                "container",
+                "flex",
+                "items-center",
+                "mx-auto",
+            ].join(" "),
+            logo: [
+                "logo-typography",
+                "no-underline",
+                "text-2xl",
+                "text-white",
+            ].join(" "),
+            menu: [
+                "flex",
+                "list-reset",
+                "ml-10",
+            ].join(" "),
+            menuItems: [
+                "hover:text-grey",
+                "no-underline",
+                "text-white",
+            ].join(" "),
+            search: [
+                "bg-white",
+                "border",
+                "border-kuru-darker",
+                "p-2",
+                "rounded",
+                "w-64",
+                "border-solid",
+            ].join(" "),
         };
         return (
             <header className={style.header}>
@@ -55,7 +60,7 @@ class Header extends Component {
                         </li>
                     </ul>
                     <div className="ml-10">
-                        <input className={style.search} placeholder="Search Kuru Anime" />
+                        <input className={style.search} placeholder="Search..." />
                     </div>
                     <div className="ml-auto">Login Field Here</div>
                 </div>
