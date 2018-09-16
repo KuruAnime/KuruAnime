@@ -119,7 +119,7 @@ class Header extends Component {
                             <a className={style.menuItems} href="#Home">Home</a>
                         </li>
                         <li className="mr-4">
-                            <a className={style.menuItems} href="#Quote">Quote</a>
+                            <a className={style.menuItems} href="#About">About</a>
                         </li>
                         <li>
                             <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank" rel="noopener noreferrer">News</a>
