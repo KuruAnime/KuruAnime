@@ -19,10 +19,12 @@ class Header extends Component {
                 "mx-auto",
             ].join(" "),
             logo: [
+                "hover:text-grey-light",
                 "logo-typography",
                 "no-underline",
                 "text-2xl",
                 "text-white",
+                "transition",
             ].join(" "),
             menu: [
                 "flex",
@@ -33,6 +35,7 @@ class Header extends Component {
                 "hover:text-grey-light",
                 "no-underline",
                 "text-white",
+                "transition",
             ].join(" "),
             search: [
                 "flex",
@@ -73,14 +76,16 @@ class Header extends Component {
             socialItems: [
                 "hover:text-grey-light",
                 "no-underline",
-                "text-xl",
                 "text-white",
+                "text-xl",
+                "transition",
             ].join(" "),
             logIn: [
                 "border-2",
                 "border-solid",
                 "border-white",
-                "hover:bg-white",
+                "hover:bg-grey-lighter",
+                "hover:border-grey-lighter",
                 "hover:text-kuru",
                 "mr-4",
                 "no-underline",
@@ -95,6 +100,8 @@ class Header extends Component {
                 "border-2",
                 "border-solid",
                 "border-white",
+                "hover:bg-grey-lighter",
+                "hover:border-grey-lighter",
                 "no-underline",
                 "px-6",
                 "py-2",
@@ -147,8 +154,14 @@ class Header extends Component {
                         </li>
                     </ul>
                     <div className="ml-auto">
-                        <a className={style.logIn} href="#LogIn">Log In</a>
-                        <a className={style.signUp} href="#SignUp">Sign Up</a>
+                        <a className={style.logIn} href="#LogIn">
+                            <i className="fas fa-sign-in-alt"></i>
+                            <span className="ml-2">Log In</span>
+                        </a>
+                        <a className={style.signUp} href="#SignUp">
+                            <i className="fas fa-user-plus"></i>
+                            <span className="ml-2">Sign Up</span>
+                        </a>
                     </div>
                 </div>
             </header>
