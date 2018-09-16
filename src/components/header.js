@@ -19,7 +19,7 @@ class Header extends Component {
                         </li>
                     </ul>
                     <div className={style.search}>
-                        <input className={style.searchField} placeholder="Search..." />
+                        <input className={style.searchField} placeholder="Search" />
                         <button className={style.searchButton}>
                             <i className="fas fa-search"></i>
                         </button>
