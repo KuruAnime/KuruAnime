@@ -15,7 +15,7 @@ class Header extends Component {
                             <a className={style.menuItems} href="#About">About</a>
                         </li>
                         <li>
-                            <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank" rel="noopener noreferrer">News</a>
+                            <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                         </li>
                     </ul>
                     <div className={style.search}>
