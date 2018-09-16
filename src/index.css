@@ -20,6 +20,11 @@ body {
 .bg-kuru {
   background-color: var(--theme);
 }
+
 .border-kuru {
+  border-color: var(--theme);
+}
+
+.border-kuru-darker {
   border-color: var(--theme-darker);
 }

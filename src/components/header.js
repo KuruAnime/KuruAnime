@@ -7,7 +7,7 @@ class Header extends Component {
                 bg-kuru
                 block
                 border-b
-                border-kuru
+                border-kuru-darker
                 border-solid
                 py-2
                 text-white
