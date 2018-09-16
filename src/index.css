@@ -3,6 +3,7 @@
 
 :root {
   --theme: #CD3C2A;
+  --theme-darker: #7d2419;
 }
 
 body {
@@ -18,4 +19,7 @@ body {
 
 .bg-kuru {
   background-color: var(--theme);
+}
+.border-kuru {
+  border-color: var(--theme-darker);
 }

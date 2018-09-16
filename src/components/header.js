@@ -4,11 +4,10 @@ class Header extends Component {
     render() {
         const style = {
             header: (`
-                bg-grey-darker
                 bg-kuru
                 block
                 border-b
-                border-red-darker
+                border-kuru
                 border-solid
                 py-2
                 text-white
