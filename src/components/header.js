@@ -37,6 +37,7 @@ class Header extends Component {
             search: [
                 "flex",
                 "items-center",
+                "ml-5",
             ].join(" "),
             searchField: [
                 "bg-white",
@@ -47,10 +48,9 @@ class Header extends Component {
                 "border-t",
                 "m-0",
                 "outline-none",
-                "px-4",
-                "py-2",
-                "rounded-bl-full",
-                "rounded-tl-full",
+                "p-2",
+                "rounded-bl",
+                "rounded-tl",
                 "w-64",
             ].join(" "),
             searchButton: [
@@ -60,12 +60,47 @@ class Header extends Component {
                 "border-r",
                 "border-t",
                 "m-0",
-                "pl-2",
-                "pr-3",
-                "py-2",
-                "rounded-br-full",
-                "rounded-tr-full",
+                "p-2",
+                "rounded-br",
+                "rounded-tr",
                 "text-grey-dark",
+            ].join(" "),
+            social: [
+                "flex",
+                "list-reset",
+                "ml-5",
+            ].join(" "),
+            socialItems: [
+                "hover:text-grey-light",
+                "no-underline",
+                "text-xl",
+                "text-white",
+            ].join(" "),
+            logIn: [
+                "border-2",
+                "border-solid",
+                "border-white",
+                "hover:bg-white",
+                "hover:text-kuru",
+                "mr-4",
+                "no-underline",
+                "px-6",
+                "py-2",
+                "rounded",
+                "text-white",
+                "transition",
+            ].join(" "),
+            signUp: [
+                "bg-white",
+                "border-2",
+                "border-solid",
+                "border-white",
+                "no-underline",
+                "px-6",
+                "py-2",
+                "rounded",
+                "text-kuru",
+                "transition",
             ].join(" "),
         };
         return (
@@ -77,21 +112,44 @@ class Header extends Component {
                             <a className={style.menuItems} href="#Home">Home</a>
                         </li>
                         <li className="mr-4">
-                            <a className={style.menuItems} href="#About">About</a>
+                            <a className={style.menuItems} href="#Quote">Quote</a>
                         </li>
                         <li>
-                            <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+                            <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank" rel="noopener noreferrer">News</a>
                         </li>
                     </ul>
-                    <div className="ml-10">
-                        <div className={style.search}>
-                            <input className={style.searchField} placeholder="Search..." />
-                            <button className={style.searchButton}>
-                                <i className="fas fa-search"></i>
-                            </button>
-                        </div>
+                    <div className={style.search}>
+                        <input className={style.searchField} placeholder="Search..." />
+                        <button className={style.searchButton}>
+                            <i className="fas fa-search"></i>
+                        </button>
                     </div>
-                    <div className="ml-auto">Login Field Here</div>
+                    <ul className={style.social}>
+                        <li className="mr-4">
+                            <a className={style.socialItems} href="#Facebook">
+                                <i className="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li className="mr-4">
+                            <a className={style.socialItems} href="#Twitter">
+                                <i className="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li className="mr-4">
+                            <a className={style.socialItems} href="#GooglePlus">
+                                <i className="fab fa-google-plus-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a className={style.socialItems} href="#Discord">
+                                <i className="fab fa-discord"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div className="ml-auto">
+                        <a className={style.logIn} href="#LogIn">Log In</a>
+                        <a className={style.signUp} href="#SignUp">Sign Up</a>
+                    </div>
                 </div>
             </header>
         );
