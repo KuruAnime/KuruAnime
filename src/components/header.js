@@ -36,12 +36,12 @@ class Header extends Component {
             ].join(" "),
             search: [
                 "bg-white",
-                "border",
                 "border-kuru-darker",
+                "border-solid",
+                "border",
                 "p-2",
                 "rounded",
                 "w-64",
-                "border-solid",
             ].join(" "),
         };
         return (
