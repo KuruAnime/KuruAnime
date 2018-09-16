@@ -30,7 +30,7 @@ class Header extends Component {
                 "ml-10",
             ].join(" "),
             menuItems: [
-                "hover:text-grey",
+                "hover:text-grey-light",
                 "no-underline",
                 "text-white",
             ].join(" "),
@@ -46,6 +46,7 @@ class Header extends Component {
                 "border-solid",
                 "border-t",
                 "m-0",
+                "outline-none",
                 "px-4",
                 "py-2",
                 "rounded-bl-full",
