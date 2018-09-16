@@ -35,32 +35,60 @@ class Header extends Component {
                 "text-white",
             ].join(" "),
             search: [
+                "flex",
+                "items-center",
+            ].join(" "),
+            searchField: [
                 "bg-white",
+                "border-b",
                 "border-kuru-darker",
+                "border-l",
                 "border-solid",
-                "border",
-                "p-2",
-                "rounded",
+                "border-t",
+                "m-0",
+                "px-4",
+                "py-2",
+                "rounded-bl-full",
+                "rounded-tl-full",
                 "w-64",
+            ].join(" "),
+            searchButton: [
+                "bg-white",
+                "border-b",
+                "border-kuru-darker",
+                "border-r",
+                "border-t",
+                "m-0",
+                "pl-2",
+                "pr-3",
+                "py-2",
+                "rounded-br-full",
+                "rounded-tr-full",
+                "text-grey-dark",
             ].join(" "),
         };
         return (
             <header className={style.header}>
                 <div className={style.container}>
-                    <a href="#" className={style.logo}>Kuru Anime</a>
+                    <a href="#Home" className={style.logo}>Kuru Anime</a>
                     <ul className={style.menu}>
                         <li className="mr-4">
-                            <a className={style.menuItems} href="#">Home</a>
+                            <a className={style.menuItems} href="#Home">Home</a>
                         </li>
                         <li className="mr-4">
-                            <a className={style.menuItems} href="#">About Us</a>
+                            <a className={style.menuItems} href="#About">About</a>
                         </li>
                         <li>
-                            <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank">Blog</a>
+                            <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                         </li>
                     </ul>
                     <div className="ml-10">
-                        <input className={style.search} placeholder="Search..." />
+                        <div className={style.search}>
+                            <input className={style.searchField} placeholder="Search..." />
+                            <button className={style.searchButton}>
+                                <i className="fas fa-search"></i>
+                            </button>
+                        </div>
                     </div>
                     <div className="ml-auto">Login Field Here</div>
                 </div>
