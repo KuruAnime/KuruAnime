@@ -4,36 +4,40 @@ class Header extends Component {
     render() {
         const style = {
             header: (`
-                bg-kuru
                 bg-grey-darker
-                text-white
+                bg-kuru
                 block
                 border-b
-                border-solid
                 border-red-darker
+                border-solid
                 py-2
+                text-white
             `),
             container: (`
                 container
-                mx-auto
                 flex
                 items-center
+                mx-auto
             `),
             logo: (`
                 logo-typography
-                text-2xl
                 no-underline
+                text-2xl
                 text-white
             `),
             menu: (`
-                ml-10
-                list-reset
                 flex
+                list-reset
+                ml-10
             `),
             menuItems: (`
-                text-white
                 hover:text-grey
                 no-underline
+                text-white
+            `),
+            search: (`
+                p-2
+                rounded
             `),
         };
         return (
@@ -51,7 +55,9 @@ class Header extends Component {
                             <a className={style.menuItems} href="https://blog.kuru-anime.com/" target="_blank">Blog</a>
                         </li>
                     </ul>
-                    <div className="ml-10">Search Box Here</div>
+                    <div className="ml-10">
+                        <input className={style.search} placeholder="Search Kuru Anime" />
+                    </div>
                     <div className="ml-auto">Login Field Here</div>
                 </div>
             </header>

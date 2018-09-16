@@ -1,6 +1,10 @@
 @import url('https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
+:root {
+  --theme: #CD3C2A;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,5 +17,5 @@ body {
 }
 
 .bg-kuru {
-  background-color: #CD3C2A;
+  background-color: var(--theme);
 }
