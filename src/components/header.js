@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from './styles/footer.style.js';
+import User from './user';
 
 class Header extends Component {
     render() {
@@ -46,16 +47,7 @@ class Header extends Component {
                             </a>
                         </li>
                     </ul>
-                    <div className="ml-auto">
-                        <a className={style.logIn} href="#LogIn">
-                            <i className="fas fa-sign-in-alt"></i>
-                            <span className="ml-2">Log In</span>
-                        </a>
-                        <a className={style.signUp} href="#SignUp">
-                            <i className="fas fa-user-plus"></i>
-                            <span className="ml-2">Sign Up</span>
-                        </a>
-                    </div>
+                    <User />
                 </div>
             </header>
         );
