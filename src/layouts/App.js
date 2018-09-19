@@ -7,7 +7,7 @@ class App extends Component {
         return (
             <div>
                 <Header />
-                <div>Under Maintenance</div>
+                <div className="container mx-auto py-4">Under Maintenance</div>
                 <Footer />
             </div>
         );
