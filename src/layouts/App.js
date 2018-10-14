@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+import HomePage from '../pages/home';
+
 class App extends Component {
     render() {
         return (
             <div>
                 <Header />
-                <div className="container mx-auto py-4">Under Maintenance</div>
+                <HomePage />
                 <Footer />
             </div>
         );
