@@ -1,21 +1,32 @@
 import React, { Component } from 'react'
-import {Helmet} from 'react-helmet'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Header from './layout/Header'
 import Footer from './layout/Footer'
+import Index from './pages/Index'
+import About from './pages/About'
 import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Helmet>
-          <title>Kuru Anime</title>
-        </Helmet>
-        <Header>Header</Header>
-        <p>Under Maintenance</p>
-        <Footer>Footer</Footer>
-      </div>
+      <Router>
+        <div className="App">
+          <Header>Header</Header>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about/">About</Link>
+            </li>
+          </ul>
+          <div>
+            <Route path="/" exact component={Index} />
+            <Route path="/about/" component={About} />
+          </div>
+          <Footer>Footer</Footer>
+        </div>
+      </Router>
     )
   }
 }
