@@ -8,7 +8,7 @@ class About extends Component {
                 <Helmet>
                     <title>About - Kuru Anime</title>
                 </Helmet>
-                <p>About</p>
+                <p>About - {this.props.test}</p>
             </div>
         )
     }

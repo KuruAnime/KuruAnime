@@ -12,17 +12,13 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header>Header</Header>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about/">About</Link>
-            </li>
-          </ul>
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="/about/">About</Link>
+          </nav>
           <div>
-            <Route path="/" exact component={Index} />
-            <Route path="/about/" component={About} />
+            <Route path="/" exact render={() => <Index />} />
+            <Route path="/about/" render={() => <About />} />
           </div>
           <Footer>Footer</Footer>
         </div>
