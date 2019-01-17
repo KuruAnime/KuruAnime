@@ -11,11 +11,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header>Header</Header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about/">About</Link>
-          </nav>
+          <Header>
+            <nav>
+              <Link to="/">Home</Link>
+              <Link to="/about/">About</Link>
+            </nav>
+          </Header>
           <div>
             <Route path="/" exact render={() => <Index />} />
             <Route path="/about/" render={() => <About />} />

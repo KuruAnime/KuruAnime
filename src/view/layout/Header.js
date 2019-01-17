@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 
 class Header extends Component {
     render() {
+        const { children } = this.props
         return (
-            <div>
-                {this.props.children}
-            </div>
+            <header>
+                <div>Kuru Anime</div>
+                {children}
+            </header>
         )
     }
 }
