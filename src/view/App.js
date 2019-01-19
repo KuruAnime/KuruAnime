@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import firebase from "firebase"
+
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 import Index from './pages/Index'
 import About from './pages/About'
 import './App.css'
 
-// const config = {
-//   apiKey: "AIzaSyCz3laxK1vMpEpjJFXSx8UyzlH7mE4KBT0",
-//   authDomain: "kuru-anime-network.firebaseapp.com",
-//   databaseURL: "https://kuru-anime-network.firebaseio.com",
-//   projectId: "kuru-anime-network",
-//   storageBucket: "kuru-anime-network.appspot.com",
-//   messagingSenderId: "195377790597"
-// };
-// firebase.initializeApp(config);
+const config = {
+  apiKey: "AIzaSyCz3laxK1vMpEpjJFXSx8UyzlH7mE4KBT0",
+  authDomain: "kuru-anime-network.firebaseapp.com",
+  databaseURL: "https://kuru-anime-network.firebaseio.com",
+  projectId: "kuru-anime-network",
+  storageBucket: "kuru-anime-network.appspot.com",
+  messagingSenderId: "195377790597"
+};
+firebase.initializeApp(config);
 
 class App extends Component {
   render() {
