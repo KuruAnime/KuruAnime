@@ -3,10 +3,11 @@ import { Helmet } from 'react-helmet'
 
 class Index extends Component {
     render() {
+        const { siteName, siteDescription } = this.props
         return (
             <div>
                 <Helmet>
-                    <title>Index - Kuru Anime</title>
+                    <title>{`${siteName} - ${siteDescription}`}</title>
                 </Helmet>
                 <p>Index</p>
             </div>

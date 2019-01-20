@@ -19,19 +19,36 @@ const config = {
 firebase.initializeApp(config);
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      siteName: null,
+      siteDescription: null
+    }
+  }
+
+  componentDidMount() {
+    firebase.database().ref('env').once('value', snap => {
+      this.setState({
+        siteName: snap.child('site_name').val(),
+        siteDescription: snap.child('site_description').val()
+      })
+    })
+  }
+
   render() {
     return (
       <Router>
         <div className="App">
-          <Header>
+          <Header siteName={this.state.siteName} siteDescription={this.state.siteDescription}>
             <nav>
               <Link to="/">Home</Link>
               <Link to="/about/">About</Link>
             </nav>
           </Header>
           <div>
-            <Route path="/" exact render={() => <Index />} />
-            <Route path="/about/" render={() => <About />} />
+            <Route path="/" exact render={() => <Index siteName={this.state.siteName} siteDescription={this.state.siteDescription} />} />
+            <Route path="/about/" render={() => <About siteName={this.state.siteName} />} />
           </div>
           <Footer>Footer</Footer>
         </div>

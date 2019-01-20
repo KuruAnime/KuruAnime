@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 
 class Header extends Component {
     render() {
-        const { children } = this.props
+        const { children, siteName, siteDescription } = this.props
         return (
             <header>
-                <div>Kuru Anime</div>
+                <div>{siteName} - {siteDescription}</div>
                 {children}
             </header>
         )
