@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    firebase.database().ref('env').once('value', snap => {
+    firebase.database().ref('env').on('value', snap => {
       this.setState({
         siteName: snap.child('site_name').val(),
         siteDescription: snap.child('site_description').val()
