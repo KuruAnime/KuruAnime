@@ -1,15 +1,15 @@
 <template>
-  <div class="hello">
+  <div class="register">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Homepage',
+  name: 'Register',
   data() {
     return {
-      msg: 'Welcome to Kuru Anime!',
+      msg: 'Register Kuru Anime',
     };
   },
 };
